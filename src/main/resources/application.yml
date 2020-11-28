@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: SturtupApplication
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/news
+    username: postgres
+    password: kazan13m
+    driver-class-name: org.postgresql.Driver
+
+  flyway:
+    url: jdbc:postgresql://localhost:5432/news
+    username: postgres
+    password: kazan13m
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+
+
